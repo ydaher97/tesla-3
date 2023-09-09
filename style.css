@@ -1,0 +1,367 @@
+/* Reset some default browser styles */
+html, body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Style the header */
+header {
+    position: sticky;
+    top: 0;
+    background-image: radial-gradient(54.97% 272.54% at 27.36% -134.72%,rgba(108,148,255,.92) 0,rgba(0,0,0,.92) 100%);
+    padding: 17px;
+    z-index: 99;
+}
+.top{
+    text-align: center;
+    color: #fff;
+}
+
+.bold{
+    font-weight: bold;
+    margin: 20px;
+    
+}
+.details{
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+/* Style the hero section */
+.hero {
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hide any overflowing content */
+
+    width: 100%;
+    height: 100vh;
+
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 43px;
+    margin: 20px 0;
+    color: #fff;
+
+}
+
+.hero p {
+    font-size: 18px;
+    color: #777;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+}
+
+.logo{
+    color: #f7f7f7;
+    padding-left: 39px;
+}
+.icons{
+    padding-right: 20px;
+}
+.icon {
+    fill: #000; /* Set the icon color */
+    text-decoration: none;
+    transition: fill 0.3s ease; /* Add a smooth color transition effect */
+}
+
+.nav ul li:hover {
+    background-color: transparent; /* Change the background color on hover */
+    filter: blur(5px);
+    -webkit-filter: blur(0.9px);
+   /* Apply a blur filter on hover */
+}
+
+
+
+nav ul {
+    list-style: none;
+    transition: backdrop-filter 0.3s ease;
+}
+
+nav li {
+    display: inline;
+    /* margin-right: 15px; */
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px;
+}
+
+.hero-name{
+    align-self: center;
+    margin-top: 70px;
+}
+.hero-name p {
+    color: #fff;
+}
+
+
+.sec-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2px; 
+    margin-top: 35vh;
+    /* width: 347px; */
+    margin: 35vh 62vh 5vh 62vh;
+
+}
+
+.tlc-badge {
+    text-align: center;
+    /* padding: 20px; */
+    color: #fff;
+}
+
+.tlc-badge div{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.tlc-badge p {
+    padding-top: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.button-container {
+    grid-column: span 3; /* Span across three columns */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 10px 65px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 4px 0;
+    cursor: pointer;
+}
+.button-explore{
+    background-color: #fff;
+}
+.button-explore:hover{
+    background-color: #d4cfcf;
+}
+
+.button-custom{
+    border: 2px solid white;
+    color: #fff !important; 
+}
+.button-custom:hover{
+    background-color: #fff;
+    color: #000 !important;
+}
+
+
+/* Style the features section */
+.features {
+    padding: 40px 0;
+   
+    background-color: #fff;
+}
+
+.feature-1{
+    height: 150px;
+    position: absolute;
+    left: 47rem;
+    top:53rem
+}
+
+.feature-2{
+    height: 150px;
+    position: absolute;
+    left: 34rem;
+    top:59rem
+}
+.feature-3{
+    height: 150px;
+    position: absolute;
+    left: 47rem;
+    top:80rem
+}
+
+.line {
+   width: 3px;
+   height: 130px;
+   background-color: #000000;
+}
+
+.dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #fff;
+}
+
+.one{
+    position: absolute;
+    right: 98px;
+}
+
+.two{
+    position: absolute;
+    right: 117px;
+}
+
+.three{
+    position: absolute;
+    right: 157px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    max-width: 70%;
+    height: auto;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #777;
+}
+
+.text{
+    display: block;
+    margin: 20px;
+    width: 80%;
+    padding-left: 170px;
+}
+
+.text p {
+    padding-top: 30px;
+}
+
+.text-2{
+    display: flex;
+    padding: 20px 190px; 
+}
+
+.text2-1{
+    margin-right: 40px;
+}
+
+
+.specifications img{
+    width: 100%;
+    height: 542px; /* Set the desired height */
+    overflow: hidden; /* Hide overflowing content */
+    object-fit: cover;
+}
+
+.specs{
+    bottom: auto;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0; 
+    width: 30%;
+    position: absolute;
+}
+
+.spec{
+    padding: 65px;
+}
+
+.spec span {
+    font-size: 25px;
+    font-weight: bold;
+}
+/* Add more styles for other sections as needed */
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature {
+        margin: 20px 0;
+    }
+}
+
+
+
+
